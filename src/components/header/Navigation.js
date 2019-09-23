@@ -1,6 +1,7 @@
 import React from 'react'
 import withStyle from 'react-jss'
 import { Link } from 'react-router-dom'
+import { UserForm } from '../login'
 
 const menu = [
     {
@@ -17,12 +18,7 @@ const menu = [
         id:'03',
         title:'SingUp',
         link:'/Signup'
-    },
-    {
-        id:'04',
-        title:'Login',
-        link:'/LoginUser'
-    }    
+    }  
 ]
 
 const NavStyle = {    
@@ -44,7 +40,7 @@ const NavStyle = {
         fontSize:'14px',
         textDecoration:'none',
         padding:'0 20px'
-    }
+    },
 }
 
 const Header = ({ classes}) => {
@@ -56,6 +52,7 @@ const Header = ({ classes}) => {
                             <li className={classes.listName}><Link className={classes.menuName} to={menuitem.link} key={menuitem.id}>{menuitem.title}</Link></li>
                         )
                     })}                
+                    <li className={classes.listName}><Link className={classes.menuName}><UserForm /></Link></li>
             </ul>
         </div>
     )
