@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import Modal from 'react-responsive-modal'
-import { LoginUserForm, RegisterFrom } from './index'
-import { Tabs, Tab } from 'react-bootstrap-tabs';
+import { LoginUserForm, RegisterFrom, Button } from './index'
 import withStyle from 'react-jss'
 import { FormStyle } from './Form.Style'
 import './form.css';
 
-
 const UserForm = ({classes}) => {
     const [modalOpen, setModalOpen] = useState(false);
+
+    const [form, setForm] = useState(false);
+
+    const currentForm = () => {
+        setForm(!form);
+    }
     
     const onOpenModal = () => {
         setModalOpen(true)
@@ -21,10 +25,8 @@ const UserForm = ({classes}) => {
         <React.Fragment>            
             <button className={classes.loginLink} onClick={onOpenModal}>Login</button>
             <Modal open={modalOpen} onClose={onCloseModal} center>
-                <Tabs onSelect={(index, label) => (label + ' selected')}>
-                    <Tab label="Login"><LoginUserForm /></Tab>
-                    <Tab label="Register"><RegisterFrom /></Tab>
-                </Tabs>
+            <Button formbtn={currentForm} />
+            {form === false ? <LoginUserForm /> : <RegisterFrom />}            
             </Modal>            
         </React.Fragment>
     )

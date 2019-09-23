@@ -52,7 +52,7 @@ const Header = ({ classes}) => {
                             <li className={classes.listName}><Link className={classes.menuName} to={menuitem.link} key={menuitem.id}>{menuitem.title}</Link></li>
                         )
                     })}                
-                    <li className={classes.listName}><Link className={classes.menuName}><UserForm /></Link></li>
+                    <li className={classes.listName}><Link className={classes.menuName}><UserForm /></Link></li>                    
             </ul>
         </div>
     )
