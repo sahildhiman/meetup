@@ -10,11 +10,11 @@ const MainLanding = () => {
     return(
         <React.Fragment>            
             <MainBanner bannertitle='We will help you to find all' />
-            <MainCategory />
-            <GetInTouchBlock />
+            <MainCategory />            
             <Community />
             <HowWork />
             <FeedBackList />
+            <GetInTouchBlock />
         </React.Fragment>
     )
 }

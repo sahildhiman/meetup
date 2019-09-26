@@ -13,6 +13,25 @@ const getInTouch = {
         width:'100%',
         maxWidth:'1200px',
         margin:'0 auto',
+        display: 'flex',
+        justifyContent: 'space-between',
+        textAlign:'left',
+        minHeight:'300px',
+        height: '100%',
+        alignItems: 'center'
+    },
+    getBtn:{
+        padding: '20px 55px',
+        textTransform: 'uppercase',
+        background: '#fff',
+        borderRadius: '30px',
+        fontSize: '11px',
+        fontWeight: '700',
+        position: 'relative',
+        top: '15px',
+        boxShadow: '0px 0px 0px 7px rgba(255,255,255,0.4)',
+        cursor:'pointer',
+        border:'0'
     }
 }
 
@@ -25,7 +44,7 @@ const GetInTouch = ({classes}) => {
                     <p>Lorem ipsum dolor sit amet, harum dolor nec in, usu molestiae at no.</p>
                 </div>
                 <div>
-                    get in touch form button
+                    <input type="button" value="Get In Touch" className={classes.getBtn} />
                 </div>
             </div>
         </div>
