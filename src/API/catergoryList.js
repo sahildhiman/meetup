@@ -8,7 +8,7 @@ export const categorylist = [
     {
         id:'01',
         img:banner01,
-        title:'conference and events',
+        title:'Conference and Event',
         shortdescription:'Constant care and attention to the patients makes good record'
     },
     {
@@ -20,19 +20,19 @@ export const categorylist = [
     {
         id:'03',
         img:banner03,
-        title:'Cafe - Pub',
+        title:'Gym - Fitness',
         shortdescription:'Constant care and attention to the patients makes good record'
     },
     {
         id:'04',
         img:banner04,
-        title:'Cafe - Pub',
+        title:'Hotels',
         shortdescription:'Constant care and attention to the patients makes good record'
     },
     {
         id:'05',
         img:banner05,
-        title:'Cafe - Pub',
+        title:'Shop - Store',
         shortdescription:'Constant care and attention to the patients makes good record'
     }
 ]

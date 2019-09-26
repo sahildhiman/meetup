@@ -6,19 +6,19 @@ const Catergory = () => {
     useEffect(()=> {
         mainCategoryList().then(data => setCategory(data))
     })
-
-    console.log('demo', mainCategoryList)
     return (
-        <div>
+        <React.Fragment>
+            <h2>Featured Categories</h2>
+            <span>Explore some of the best tips from around the city from our partners and friends.</span>
             {category && category.map(mainCate => {
                 return (
-                    <div key={mainCate.id}>
+                    <div key={mainCate.id} >
                         <h2>{mainCate.title}</h2>
                         <p>{mainCate.shortdescription}</p>
                     </div>
                 )
             })}
-        </div>
+        </React.Fragment>
     )
 }
 
