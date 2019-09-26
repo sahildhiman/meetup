@@ -1,6 +1,7 @@
 import React from 'react'
 import withStyle from 'react-jss'
 import { Widget } from './../widget'
+import { TwitterComponents } from '../twitter'
 
 const footerStyle = {
     footerContainer: {
@@ -28,7 +29,9 @@ const Footer = ({ classes }) => {
                     <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
                 </Widget>
                 <Widget WidgetTitle="Our Last Meetup" />
-                <Widget WidgetTitle="Our Twitter" />
+                <Widget WidgetTitle="Our Twitter">
+                    <TwitterComponents />
+                </Widget>
                 <Widget WidgetTitle="Subscribe" />
             </div>
         </div>
