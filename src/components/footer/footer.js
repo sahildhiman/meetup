@@ -1,7 +1,7 @@
 import React from 'react'
 import withStyle from 'react-jss'
 import { Widget } from './../widget'
-import { TwitterComponents } from '../twitter'
+import { TwitterComponent } from '../twitter'
 
 const footerStyle = {
     footerContainer: {
@@ -30,7 +30,7 @@ const Footer = ({ classes }) => {
                 </Widget>
                 <Widget WidgetTitle="Our Last Meetup" />
                 <Widget WidgetTitle="Our Twitter">
-                    <TwitterComponents />
+                    <TwitterComponent />
                 </Widget>
                 <Widget WidgetTitle="Subscribe" />
             </div>

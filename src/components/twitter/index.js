@@ -1,1 +1,1 @@
-export { default as TwitterComponents } from './twitter'
+export { default as TwitterComponent } from './twitter'
