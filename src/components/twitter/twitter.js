@@ -1,11 +1,14 @@
 import React from 'react'
-import { TwitterTweetEmbed } from 'react-twitter-embed';
+import { TwitterTweetEmbed, TwitterFollowButton } from 'react-twitter-embed';
 
 const Twitter = () => {
     return (
         <React.Fragment>             
-                <TwitterTweetEmbed
+                <TwitterTweetEmbed options={{height: 400, width:300}} 
                 tweetId={'933354946111705097'}
+                />
+                <TwitterFollowButton
+                    screenName={'saurabhnemade'}
                 />
         </React.Fragment>
     )
