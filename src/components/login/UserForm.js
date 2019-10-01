@@ -3,6 +3,7 @@ import Modal from 'react-responsive-modal'
 import { LoginUserForm, RegisterFrom, Button } from './index'
 import withStyle from 'react-jss'
 import { FormStyle } from './Form.Style'
+import { LoginWithSocialAccount } from '../loginWithSocialAccount'
 import './form.css';
 
 const UserForm = ({classes}) => {
@@ -25,6 +26,7 @@ const UserForm = ({classes}) => {
         <React.Fragment>            
             <button className={classes.loginLink} onClick={onOpenModal}>Login</button>
             <Modal open={modalOpen} onClose={onCloseModal} center>
+            <LoginWithSocialAccount />
             <Button formbtn={currentForm} />
             {form === false ? <LoginUserForm /> : <RegisterFrom />}            
             </Modal>            
