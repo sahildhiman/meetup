@@ -20,7 +20,7 @@ const Header = ({classes}) => {
     return (
         <div className={classes.headerOuterContainer}>
             <div className={classes.headContainer}>
-                <Logo />
+                <Logo name="Company Name" />
                 <MainNav />            
             </div>
         </div>

@@ -7,9 +7,9 @@ const logoStyle = {
     }
 }
 
-const Logo = ({ classes }) => {
+const Logo = ({ classes, ...props }) => {
     return(
-        <h3 className={classes.logoContainer}>ReactMeetup</h3>
+        <h3 className={classes.logoContainer}>{props.name}</h3>
     )
 }
 export default withStyle(logoStyle)(Logo);
